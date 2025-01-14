@@ -1,0 +1,226 @@
+{
+  "name": "t:sections.header-group.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "text_on_mobile": "",
+            "text_size": 13,
+            "link": ""
+          }
+        }
+      },
+      "block_order": ["announcement-bar-0"],
+      "disabled": true,
+      "settings": {
+        "only_homepage": true,
+        "layout": "default",
+        "mobile_layout": "carousel",
+        "autorotate": true,
+        "autorotate_speed": 5,
+        "show_navigation": true,
+        "direction": "left",
+        "speed": 1.6,
+        "colors_text": "#1a1b18",
+        "colors_background": "#f7eedd",
+        "gradient_background": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "marquee_announcement_rqRrat": {
+      "type": "marquee-announcement",
+      "blocks": {
+        "announcement_YyngKx": {
+          "type": "announcement",
+          "settings": {
+            "text": "60 min Delivery",
+            "link": "",
+            "icon_url": "https://cdn.shopify.com/s/files/1/0718/3086/4093/files/3_00a19850-33e9-4ad7-88ba-f3000c3db35a.png?v=1730206265"
+          }
+        },
+        "announcement_QJWm8Q": {
+          "type": "announcement",
+          "settings": {
+            "text": "Video approval on all orders",
+            "link": "",
+            "icon_url": "https://cdn.shopify.com/s/files/1/0718/3086/4093/files/2_7e8d6715-2063-49be-842f-2d0d5cb10aa1.png?v=1730206265"
+          }
+        },
+        "announcement_X6FWpD": {
+          "type": "announcement",
+          "settings": {
+            "text": "Luxury flowers & gifts",
+            "link": "",
+            "icon_url": "https://cdn.shopify.com/s/files/1/0718/3086/4093/files/1_97217bb6-e411-489b-9b0e-9eda33f1aea8.png?v=1730206265"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_YyngKx",
+        "announcement_QJWm8Q",
+        "announcement_X6FWpD"
+      ],
+      "settings": {}
+    },
+    "icon_row_FtQpKL": { "type": "icon-row", "settings": {} },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "mega_menu_UjaUCE": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_title": "flowers",
+            "narrow": true,
+            "show_menu_image": false,
+            "promo_image_ratio_1": "landscape",
+            "promo_image_position_1": "center center",
+            "promo_heading_1": "",
+            "promo_text_1": "",
+            "promo_overlay_content_1": false,
+            "promo_link_1": "",
+            "promo_image_ratio_2": "landscape",
+            "promo_image_position_2": "center center",
+            "promo_heading_2": "",
+            "promo_text_2": "",
+            "promo_overlay_content_2": false,
+            "promo_link_2": ""
+          }
+        },
+        "mega_menu_reXb7Y": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_title": "flowers with gifts",
+            "narrow": true,
+            "show_menu_image": false,
+            "promo_image_ratio_1": "adapt",
+            "promo_image_position_1": "center center",
+            "promo_heading_1": "",
+            "promo_text_1": "",
+            "promo_overlay_content_1": false,
+            "promo_link_1": "",
+            "promo_image_ratio_2": "adapt",
+            "promo_image_position_2": "center center",
+            "promo_heading_2": "",
+            "promo_text_2": "",
+            "promo_overlay_content_2": false,
+            "promo_link_2": ""
+          }
+        },
+        "mega_menu_Jz7GHM": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_title": "gift for",
+            "narrow": true,
+            "show_menu_image": false,
+            "promo_image_ratio_1": "adapt",
+            "promo_image_position_1": "center center",
+            "promo_heading_1": "",
+            "promo_text_1": "",
+            "promo_overlay_content_1": false,
+            "promo_link_1": "",
+            "promo_image_ratio_2": "adapt",
+            "promo_image_position_2": "center center",
+            "promo_heading_2": "",
+            "promo_text_2": "",
+            "promo_overlay_content_2": false,
+            "promo_link_2": ""
+          }
+        },
+        "mega_menu_FLeFUW": {
+          "type": "mega_menu",
+          "disabled": true,
+          "settings": {
+            "menu_title": "occasion",
+            "narrow": true,
+            "show_menu_image": false,
+            "promo_image_ratio_1": "adapt",
+            "promo_image_position_1": "center center",
+            "promo_heading_1": "",
+            "promo_text_1": "",
+            "promo_overlay_content_1": false,
+            "promo_link_1": "",
+            "promo_image_ratio_2": "adapt",
+            "promo_image_position_2": "center center",
+            "promo_heading_2": "",
+            "promo_text_2": "",
+            "promo_overlay_content_2": false,
+            "promo_link_2": ""
+          }
+        },
+        "mega_menu_qFE7wp": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_title": "60 mins delivery",
+            "narrow": true,
+            "show_menu_image": false,
+            "promo_image_ratio_1": "adapt",
+            "promo_image_position_1": "center center",
+            "promo_heading_1": "",
+            "promo_text_1": "",
+            "promo_overlay_content_1": false,
+            "promo_link_1": "",
+            "promo_image_ratio_2": "adapt",
+            "promo_image_position_2": "center center",
+            "promo_heading_2": "",
+            "promo_text_2": "",
+            "promo_overlay_content_2": false,
+            "promo_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "mega_menu_UjaUCE",
+        "mega_menu_reXb7Y",
+        "mega_menu_Jz7GHM",
+        "mega_menu_FLeFUW",
+        "mega_menu_qFE7wp"
+      ],
+      "settings": {
+        "logo": "shopify://shop_images/Zuvees_logo_Final_Final_1.png",
+        "mobile_logo": "shopify://shop_images/Zuvees_logo_Final_Final_1.png",
+        "logo_height": 40,
+        "mobile_logo_height": 30,
+        "logo_position": "top-center",
+        "menu": "main-menu",
+        "menu_mobile": "main-menu",
+        "enable_dropdown_menu": true,
+        "show_line_separator": false,
+        "uppercase_menu_items": true,
+        "cart_icon": "cart",
+        "icon_weight": "1.1",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "enable_sticky_header": true,
+        "show_sticky_header_scroll_up": false,
+        "enable_transparent_header": true,
+        "enable_transparent_header_collection": true,
+        "enable_transparent_header_custom": "",
+        "show_transparent_header_border": false,
+        "transparent_text_color": "#ffffff",
+        "enable_highlight": false,
+        "highlight_labels": "",
+        "highlight_style": "marker",
+        "mobile_logo_position": "center",
+        "colors_text": "#282828",
+        "colors_border": "#d2d5d9",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "colors_highlight": "#bbff00",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "marquee_announcement_rqRrat",
+    "icon_row_FtQpKL",
+    "header"
+  ]
+}

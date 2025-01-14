@@ -1,0 +1,60 @@
+{% schema %}
+{
+  "name": "Icon Row",
+  "settings": [],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Default",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  /* Desktop and Large Screens */
+  .icon-row {
+    display: flex;
+    justify-content: left;
+    gap: 40px;
+    padding: 8px 0;
+    padding-left: 10px;
+    background-color: #660E36;
+    color: #ffffff;
+  }
+
+  .icon-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .icon-item img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Hide from tablets and mobile */
+  @media (max-width: 1024px) {
+    .icon-row {
+      display: none;
+    }
+  }
+</style>
+
+<div class="icon-row">
+  <div class="icon-item">
+    <img src="{{'https://cdn.shopify.com/s/files/1/0718/3086/4093/files/3_00a19850-33e9-4ad7-88ba-f3000c3db35a.png?v=1730206265'}}" alt="Express Delivery">
+    <span>60 min Delivery</span>
+  </div>
+  <div class="icon-item">
+    <img src="{{'https://cdn.shopify.com/s/files/1/0718/3086/4093/files/2_7e8d6715-2063-49be-842f-2d0d5cb10aa1.png?v=1730206265'}}" alt="Video Approval">
+    <span>Video approval on all orders</span>
+  </div>
+  <div class="icon-item">
+    <img src="{{'https://cdn.shopify.com/s/files/1/0718/3086/4093/files/1_97217bb6-e411-489b-9b0e-9eda33f1aea8.png?v=1730206265'}}" alt="Premium Flowers & Gifts">
+    <span>Luxury flowers & gifts</span>
+  </div>
+</div>

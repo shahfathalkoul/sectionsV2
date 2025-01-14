@@ -1,0 +1,268 @@
+{
+  "sections": {
+    "empty-space": {
+      "type": "empty-space",
+      "settings": { "desktop_height": 36, "mobile_height": 16 }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "breadcrumb": {
+          "type": "breadcrumb",
+          "settings": { "text_style": "uppercase", "show_divider": true }
+        },
+        "vendor": {
+          "type": "text",
+          "settings": { "icon": "none", "text": "", "text_style": "uppercase" }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h2",
+            "show_price": false,
+            "price_size": "medium"
+          }
+        },
+        "rating": { "type": "rating", "settings": {} },
+        "price": {
+          "type": "price",
+          "settings": {
+            "price_size": "medium",
+            "show_badges": true,
+            "sale_badge_basis": "auto"
+          }
+        },
+        "countdown": {
+          "type": "countdown",
+          "settings": {
+            "heading": "Hurry up ! Sale end in:",
+            "number_size": "compact",
+            "colors_heading": "#da3f3f",
+            "colors_text": "#da3f3f",
+            "colors_background": "#ffeeee"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": true,
+            "swatches_source": "variant",
+            "swatch_type": "round",
+            "enable_swatch_cross": true,
+            "enable_swatch_unavailable_click": false,
+            "size_chart": ""
+          }
+        },
+        "image_MAxRJz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2024-10-29_at_7.09.55_PM.png",
+            "height": 60,
+            "link": ""
+          }
+        },
+        "custom_liquid_h3YyRD": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Icon Description Section</title>\n    <style>\n        /* CSS for the icon description section */\n        .icon-description-section {\n            display: flex;\n            flex-direction: column;\n            gap: 0px; /* Reduces the space between items */\n            padding: 20px;\n        }\n\n        .icon-description-item {\n            display: flex;\n            align-items: center;\n            padding: 10px 0;\n        }\n\n        .icon {\n            width: 30px; /* Reduced icon size */\n            height: 30px; /* Reduced icon size */\n            margin-right: 10px; /* Reduces space between icon and text */\n        }\n\n        .text-content h4 {\n            font-size: 16px; /* Reduced title size */\n            font-weight: bold;\n            margin: 0;\n        }\n\n        .text-content p {\n            font-size: 12px; /* Reduced description size */\n            color: #666;\n            margin: 0;\n        }\n\n        /* Media query for small screens (Mobile) */\n        @media (max-width: 768px) {\n            .icon-description-section {\n                padding: 15px;\n            }\n\n            .icon-description-item {\n                flex-direction: row;\n                align-items: flex-start;\n            }\n        }\n    </style>\n</head>\n<body>\n\n    <section class=\"icon-description-section\">\n        <!-- Icon Description Item 1 -->\n        <div class=\"icon-description-item\">\n            <img src=\"https://cdn.shopify.com/s/files/1/0718/3086/4093/files/flower.png?v=1729657679\" class=\"icon\">\n            <div class=\"text-content\">\n                <h4>Premium Flowers</h4>\n                <p>Sourced from the best farms</p>\n            </div>\n        </div>\n\n  <!-- Icon Description Item 2 -->\n        <div class=\"icon-description-item\">\n            <img src=\"https://cdn.shopify.com/s/files/1/0718/3086/4093/files/free_shipping.png?v=1729657073\" alt=\"Free delivery\" class=\"icon\">\n            <div class=\"text-content\">\n                <h4>Free delivery</h4>\n                <p>on orders over AED 360</p>\n            </div>\n        </div>\n    </section>\n\n</body>\n</html>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "settings": {
+            "inventory_threshold": 20,
+            "show_inventory_transfer": true,
+            "color_scheme": "accent-3"
+          }
+        },
+        "related_buttons": {
+          "type": "related_buttons",
+          "settings": { "show_icons": false }
+        },
+        "collapsible_tab-1": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "heading": "Product Description",
+            "content": "",
+            "page": "",
+            "custom_liquid": "",
+            "keep_open": false
+          }
+        },
+        "collapsible_tab-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "heading": "Product Description",
+            "content": "<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially uncorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unc</p>",
+            "page": "",
+            "custom_liquid": "",
+            "keep_open": false
+          }
+        },
+        "sticky_cart": {
+          "type": "sticky_cart",
+          "settings": { "show_quantity_selector": false }
+        },
+        "share": { "type": "share", "settings": { "share_label": "Share" } }
+      },
+      "block_order": [
+        "breadcrumb",
+        "vendor",
+        "title",
+        "rating",
+        "price",
+        "countdown",
+        "variant_picker",
+        "image_MAxRJz",
+        "custom_liquid_h3YyRD",
+        "buy_buttons",
+        "inventory_status",
+        "related_buttons",
+        "collapsible_tab-1",
+        "collapsible_tab-0",
+        "sticky_cart",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_position": "left",
+        "media_size": "small",
+        "gallery_layout": "thumbnail_slider",
+        "image_ratio": "adapt",
+        "show_featured_media": true,
+        "show_thumbnails": true,
+        "hide_variants": true,
+        "enable_image_zoom": true,
+        "enable_video_looping": false,
+        "mobile_image_ratio": "adapt_first",
+        "show_mobile_thumbnails": true,
+        "padding_top": 0,
+        "padding_bottom": 72
+      }
+    },
+    "sp_tabs_UjNF9y": {
+      "type": "sp-tabs",
+      "blocks": {
+        "tab_bJXfFP": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Description",
+            "tab_content": "<p>This is sample tab content</p>"
+          }
+        },
+        "tab_GcQ9XU": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Care Tips",
+            "tab_content": "<p>This is sample tab content</p>"
+          }
+        },
+        "tab_Yni49c": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Shipping & Return Policy",
+            "tab_content": "<p>This is sample tab content</p>"
+          }
+        }
+      },
+      "block_order": ["tab_bJXfFP", "tab_GcQ9XU", "tab_Yni49c"],
+      "settings": {
+        "text_font": "sans-serif",
+        "text_size": 15,
+        "headline_font": "sans-serif",
+        "headline_size": 25,
+        "text_color": "#111111",
+        "background_color": "transparent",
+        "tab_active_color": "#111111",
+        "tab_inactive_color": "#888888",
+        "tab_border_color": "#dddddd",
+        "max_width": 1000,
+        "padding_top": 25,
+        "padding_bottom": 25,
+        "padding_left": 10,
+        "padding_right": 10,
+        "element_spacing": 15
+      }
+    },
+    "empty_space_jnUNh6": {
+      "type": "empty-space",
+      "settings": { "desktop_height": 40, "mobile_height": 28 }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_list_limit": 4,
+        "show_divider": false,
+        "heading": "Our Customers Also Viewed",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "image_ratio": "portrait",
+        "image_position": "center center",
+        "enable_image_fill": true,
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "show_quick_buy": true,
+        "enable_quick_view": true,
+        "enable_color_swatches": true,
+        "enable_countdown": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "empty_space_jXz7T6": {
+      "type": "empty-space",
+      "settings": { "desktop_height": 40, "mobile_height": 28 }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "show_divider": false,
+        "heading": "Recently Viewed",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "image_ratio": "portrait",
+        "image_position": "center center",
+        "enable_image_fill": true,
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "show_quick_buy": true,
+        "enable_quick_view": true,
+        "enable_color_swatches": true,
+        "enable_countdown": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "empty-space",
+    "main",
+    "sp_tabs_UjNF9y",
+    "empty_space_jnUNh6",
+    "product-recommendations",
+    "empty_space_jXz7T6",
+    "recently-viewed-products"
+  ]
+}

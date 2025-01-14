@@ -1,0 +1,151 @@
+<div class="marquee-announcement" {% unless section.blocks.size > 0 %}style="display: none;"{% endunless %}>
+    <div class="marquee-wrapper">
+        {% for block in section.blocks %}
+            {% if block.settings.text or block.settings.icon %}
+                <div class="marquee-item">
+                    {% if block.settings.icon_url %}
+                        <img src="{{ block.settings.icon_url }}" alt="Icon" class="marquee-icon">
+                    {% elsif block.settings.icon %}
+                        <img src="{{ block.settings.icon | file_url }}" alt="Icon" class="marquee-icon">
+                    {% else %}
+                        <span class="marquee-placeholder-icon">🔔</span>
+                    {% endif %}
+                    {% if block.settings.text %}
+                        {% if block.settings.link %}
+                            <a href="{{ block.settings.link }}" class="marquee-link">{{ block.settings.text }}</a>
+                        {% else %}
+                            <span class="marquee-text">{{ block.settings.text }}</span>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            {% endif %}
+        {% endfor %}
+        
+        <!-- Duplicate content for seamless loop -->
+        {% for block in section.blocks %}
+            {% if block.settings.text or block.settings.icon %}
+                <div class="marquee-item">
+                    {% if block.settings.icon_url %}
+                        <img src="{{ block.settings.icon_url }}" alt="Icon" class="marquee-icon">
+                    {% elsif block.settings.icon %}
+                        <img src="{{ block.settings.icon | file_url }}" alt="Icon" class="marquee-icon">
+                    {% else %}
+                        <span class="marquee-placeholder-icon">🔔</span>
+                    {% endif %}
+                    {% if block.settings.text %}
+                        {% if block.settings.link %}
+                            <a href="{{ block.settings.link }}" class="marquee-link">{{ block.settings.text }}</a>
+                        {% else %}
+                            <span class="marquee-text">{{ block.settings.text }}</span>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+<style>
+    .marquee-announcement {
+        display: none; /* Hidden by default */
+        overflow: hidden;
+        background: #660E36;
+        padding: 5px 0;
+        font-size: 14px;
+        white-space: nowrap; /* Ensure content stays in one line */
+    }
+
+    /* Only visible for mobile and tablet */
+    @media (max-width: 1024px) {
+        .marquee-announcement {
+            display: block;
+        }
+    }
+
+    .marquee-wrapper {
+        display: flex;
+        animation: scroll 10s linear infinite; /* Smooth continuous scrolling */
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%); /* Move the items to the left */
+        }
+    }
+
+    .marquee-item {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 40px; /* Spacing between items */
+    }
+
+    .marquee-icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+        object-fit: contain;
+    }
+
+    .marquee-placeholder-icon {
+        font-size: 24px;
+        margin-right: 8px;
+        color: #999;
+    }
+
+    .marquee-link {
+        color: #007acc;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .marquee-text {
+        font-size: 14px;
+        color: #fff;
+      font-family: 'DM Sans';
+    }
+</style>
+
+{% schema %}
+{
+    "name": "Marquee Announcement",
+    "settings": [],
+    "blocks": [
+        {
+            "type": "announcement",
+            "name": "Announcement",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "Text"
+                },
+                {
+                    "type": "url",
+                    "id": "link",
+                    "label": "Link"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "icon",
+                    "label": "Icon (PNG or SVG)"
+                },
+                {
+                    "type": "text",
+                    "id": "icon_url",
+                    "label": "Icon URL (use this if image upload fails)",
+                    "default": "Icon URL"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Marquee Announcement",
+            "category": "Custom"
+        }
+    ]
+}
+{% endschema %}
