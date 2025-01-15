@@ -55,10 +55,10 @@
   endif
 -%}
 
-<div style="background-color:#FAF0E8;
+<div style="background-color:#FAF0E8; padding : 136px 155px;
 ;" class="section--padding{% if section.settings.show_divider %} section--divider{% endif %}">
   <div class="image-with-text{% if section.settings.use_custom_colors and section.settings.colors_background != settings.colors_background %} image-with-text--colored{% else %} image-with-text--alt{% endif %}{% if section.settings.enlarge_content %} image-with-text--enlarge{% endif %} page-width{% if section.settings.full_width %} page-width--full-width{% endif %}">
-    <div class="{{ grid_class }} grid grid--gapless grid--1-col grid--2-col-tablet">
+    <div style="background-color :#FAF0E8;" class="{{ grid_class }} grid grid--gapless grid--1-col grid--2-col-tablet">
       <div style="background-color :#FAF0E8;" class="grid__item">
         {% if section.settings.video == blank and section.settings.video_url == blank %}
         <use-animate data-animate="zoom-fade" class="media-wrapper">
@@ -212,13 +212,14 @@
           {%- for block in section.blocks -%}
             {% case block.type %}
               {%- when 'heading' -%}
-                <{{ block.settings.heading_tag }} class="image-with-text__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</{{ block.settings.heading_tag }}>
+                <{{ block.settings.heading_tag }} class="image-with-text__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }} style = "font-family : josefin sans; font-size : 34px">{{ block.settings.heading | escape }}</{{ block.settings.heading_tag }}>
               {%- when 'subheading' -%}
-                <p class="image-with-text__subheading{% if block.settings.secondary_color %} image-with-text__subheading--colored{% endif %} {{ block.settings.subheading_size }}" {{ block.shopify_attributes }}>{{ block.settings.subheading | escape }}</p>
+                <p style="color: #660033; border : 0px solid black; border-radius : 4px; background-color: #E5AB7D; padding : 4px 12px; font-family : josefin sans; font-weight :400; font-size :10px; text-align :center; line-height : 20px;
+              " class="image-with-text__subheading{% if block.settings.secondary_color %} image-with-text__subheading--colored{% endif %} {{ block.settings.subheading_size }}" {{ block.shopify_attributes }}>{{ block.settings.subheading | escape }}</p>
               {%- when 'text' -%}
-                <div class="image-with-text__text{% if block.settings.secondary_color %} image-with-text__text--colored{% endif %} {{ block.settings.text_size }} rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+                <div style="font-family: playwrite AU SA; font-size: 14px;color: #B9125F; letter: -1%; font-weight :400;" class="image-with-text__text{% if block.settings.secondary_color %} image-with-text__text--colored{% endif %} {{ block.settings.text_size }} rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
               {%- when 'custom_liquid' -%}
-                <div class="image-with-text__text rte" {{ block.shopify_attributes }}>{{ block.settings.custom_liquid }}</div>
+                <div  class="image-with-text__text rte" {{ block.shopify_attributes }}>{{ block.settings.custom_liquid }}</div>
               {%- when 'button' -%}
                 {%- if block.settings.button_label != blank -%}
                   {%- if block.settings.button_style_secondary -%}
