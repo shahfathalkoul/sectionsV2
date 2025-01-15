@@ -217,11 +217,9 @@
                 <p style="margin-bottom : 24px ; color: #660033; border : 0px solid black; border-radius : 4px; background-color: #E5AB7D; padding : 4px 12px; font-family : josefin sans; font-weight :400; font-size :10px; text-align :center; line-height : 20px;
               " class="image-with-text__subheading{% if block.settings.secondary_color %} image-with-text__subheading--colored{% endif %} {{ block.settings.subheading_size }}" {{ block.shopify_attributes }}>{{ block.settings.subheading | escape }}</p>
               {%- when 'text' -%}
-                <div style="font-family: playwrite AU SA; font-size: 14px;color: #B9125F; letter: -1%; font-weight :400;" class="image-with-text__text{% if block.settings.secondary_color %} image-with-text__text--colored{% endif %} {{ block.settings.text_size }} rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+                <div style="line-height : 30px; font-family: playwrite AU SA; font-size: 14px;color: #B9125F; letter: -1%; font-weight :400;" class="image-with-text__text{% if block.settings.secondary_color %} image-with-text__text--colored{% endif %} {{ block.settings.text_size }} rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
               {%- when 'custom_liquid' -%}
-                <div style="font-family : josefin sans; font-size : 14px; display: flex; align-items : center; gap : 20px;"  class="image-with-text__text rte" {{ block.shopify_attributes }} >{{ block.settings.custom_liquid }}<svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="2" height="12" rx="1" fill="#E5AB7D"/>
-                </svg></div>
+                <div style="font-family : josefin sans; font-size : 14px; display: flex; align-items : center; gap : 20px;"  class="image-with-text__text rte" {{ block.shopify_attributes }} >{{ block.settings.custom_liquid }}</div>
                 {%- when 'button' -%}
                   {%- if block.settings.button_label_left != blank and block.settings.button_label_right != blank -%}
                     <div class="button-group">
