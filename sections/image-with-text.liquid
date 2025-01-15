@@ -55,10 +55,11 @@
   endif
 -%}
 
-<div class="section--padding{% if section.settings.show_divider %} section--divider{% endif %}">
+<div style="background-color:#FAF0E8;
+;" class="section--padding{% if section.settings.show_divider %} section--divider{% endif %}">
   <div class="image-with-text{% if section.settings.use_custom_colors and section.settings.colors_background != settings.colors_background %} image-with-text--colored{% else %} image-with-text--alt{% endif %}{% if section.settings.enlarge_content %} image-with-text--enlarge{% endif %} page-width{% if section.settings.full_width %} page-width--full-width{% endif %}">
     <div class="{{ grid_class }} grid grid--gapless grid--1-col grid--2-col-tablet">
-      <div class="grid__item">
+      <div style="background-color :#FAF0E8;" class="grid__item">
         {% if section.settings.video == blank and section.settings.video_url == blank %}
         <use-animate data-animate="zoom-fade" class="media-wrapper">
           <div class="image-animate media--{{ section.settings.image_ratio }} media-mobile--{{ section.settings.mobile_image_ratio }} {% if section.settings.image != blank %}media{% else %}media--placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}">
@@ -205,8 +206,9 @@
         </div>
         {% endif %}
       </div>
-      <div class="grid__item">
-        <div class="image-with-text__content {{ section.settings.text_box_position }} {{ section.settings.text_alignment }} mobile-{{ section.settings.mobile_text_alignment }}">
+      <div style="" class="grid__item">
+        <div style="background-color:#FAF0E8;
+        ;" class="image-with-text__content {{ section.settings.text_box_position }} {{ section.settings.text_alignment }} mobile-{{ section.settings.mobile_text_alignment }}">
           {%- for block in section.blocks -%}
             {% case block.type %}
               {%- when 'heading' -%}
