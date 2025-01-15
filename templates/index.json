@@ -647,13 +647,7 @@
         "custom_liquid_4PNyT9": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "Mariam Belidong"
-          }
-        },
-        "custom_liquid_jW7P8P": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "ok"
+            "custom_liquid": "<div style=\"display: flex; align-items: center; gap: 20px;\">Mariam Belidong <svg width=\"2\" height=\"12\" viewBox=\"0 0 2 12\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                <rect width=\"2\" height=\"12\" rx=\"1\" fill=\"#E5AB7D\"/>\n                </svg> <span style=\"color: gray\">Special Client</span></div>"
           }
         },
         "button_pQxwY4": {
@@ -671,7 +665,6 @@
         "heading_pjCbd8",
         "text_6ncVrA",
         "custom_liquid_4PNyT9",
-        "custom_liquid_jW7P8P",
         "button_pQxwY4"
       ],
       "settings": {
