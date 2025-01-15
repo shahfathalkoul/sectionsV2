@@ -562,9 +562,10 @@
         "text_V47wD4",
         "button_KFUnYU"
       ],
+      "custom_css": [],
       "settings": {
         "image_position": "center center",
-        "layout": "image_first",
+        "layout": "text_first",
         "text_box_position": "middle",
         "text_alignment": "left",
         "image_ratio": "adapt",
@@ -583,8 +584,8 @@
         "colors_text": "#212326",
         "colors_background": "#ffffff",
         "gradient_background": "",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "featured_collection_xHrUPq": {
@@ -614,6 +615,83 @@
         "enable_countdown": true,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "image_with_text_JhF4Dp": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_bqWUn9": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "TESTIMONIAL",
+            "subheading_size": "h5",
+            "secondary_color": false
+          }
+        },
+        "heading_pjCbd8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Joyful Stories fromOur Customers",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_6ncVrA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>“The service that is served is so very charming with friendly waiters and also a comfortable place so that it makes customers feel at home for a long time in this shop and also the tea shop owner provides free warm making the atmosphere so beautiful, and this is a very pleasant experience for me. and I will visit here again every weekend with my family and also my friends.”</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "text_CiR4R3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mariam Belidong</p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        },
+        "button_pQxwY4": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_bqWUn9",
+        "heading_pjCbd8",
+        "text_6ncVrA",
+        "text_CiR4R3",
+        "button_pQxwY4"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/video_player.png",
+        "image_position": "80% 50%",
+        "layout": "text_first",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "adapt",
+        "enlarge_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "enable_video_looping": false,
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "video_hero_Xnt4dk": {
@@ -778,6 +856,8 @@
         "full_width": true,
         "show_divider": false,
         "heading": "A Glimpse Into Zuvees’ World",
+        "button_text": "Follow @Zuvees for exclusive updates and offers",
+        "button_style": "button--primary",
         "heading_size": "h1",
         "heading_alignment": "center",
         "heading_tag": "h4",
@@ -806,6 +886,7 @@
     "guarantees_UTBV73",
     "image_with_text_DLReWf",
     "featured_collection_xHrUPq",
+    "image_with_text_JhF4Dp",
     "video_hero_Xnt4dk",
     "rich_text_jJXCa9",
     "custom_liquid_Eee67y",
