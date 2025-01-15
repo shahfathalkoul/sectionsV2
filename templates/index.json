@@ -549,8 +549,6 @@
         "button_KFUnYU": {
           "type": "button",
           "settings": {
-            "button_label": "Know More",
-            "button_link": "shopify://blogs/news",
             "button_size": "medium",
             "button_style_secondary": false
           }
@@ -653,8 +651,6 @@
         "button_pQxwY4": {
           "type": "button",
           "settings": {
-            "button_label": "->",
-            "button_link": "",
             "button_size": "medium",
             "button_style_secondary": false
           }

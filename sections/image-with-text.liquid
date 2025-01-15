@@ -214,26 +214,70 @@
               {%- when 'heading' -%}
                 <{{ block.settings.heading_tag }} class="image-with-text__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }} style = "font-family : josefin sans; font-size : 34px">{{ block.settings.heading | escape }}</{{ block.settings.heading_tag }}>
               {%- when 'subheading' -%}
-                <p style="color: #660033; border : 0px solid black; border-radius : 4px; background-color: #E5AB7D; padding : 4px 12px; font-family : josefin sans; font-weight :400; font-size :10px; text-align :center; line-height : 20px;
+                <p style="margin-bottom : 24px ; color: #660033; border : 0px solid black; border-radius : 4px; background-color: #E5AB7D; padding : 4px 12px; font-family : josefin sans; font-weight :400; font-size :10px; text-align :center; line-height : 20px;
               " class="image-with-text__subheading{% if block.settings.secondary_color %} image-with-text__subheading--colored{% endif %} {{ block.settings.subheading_size }}" {{ block.shopify_attributes }}>{{ block.settings.subheading | escape }}</p>
               {%- when 'text' -%}
                 <div style="font-family: playwrite AU SA; font-size: 14px;color: #B9125F; letter: -1%; font-weight :400;" class="image-with-text__text{% if block.settings.secondary_color %} image-with-text__text--colored{% endif %} {{ block.settings.text_size }} rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
               {%- when 'custom_liquid' -%}
-                <div  class="image-with-text__text rte" {{ block.shopify_attributes }}>{{ block.settings.custom_liquid }}</div>
-              {%- when 'button' -%}
-                {%- if block.settings.button_label != blank -%}
-                  {%- if block.settings.button_style_secondary -%}
-                    <a class="button button--cta button--{{ block.settings.button_size }}"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
-                      <span class="label">{{ block.settings.button_label | escape }}</span>
-                      {% render 'icon', icon: 'arrow' %}
-                    </a>
-                  {%- else -%}
-                    <a class="button button--{{ block.settings.button_size }}"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
-                      {{ block.settings.button_label | escape }}
-                    </a>
+                <div style="font-family : josefin sans; font-size : 14px; display: flex; align-items : center; gap : 20px;"  class="image-with-text__text rte" {{ block.shopify_attributes }} >{{ block.settings.custom_liquid }}<svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="2" height="12" rx="1" fill="#E5AB7D"/>
+                </svg></div>
+                {%- when 'button' -%}
+                  {%- if block.settings.button_label_left != blank and block.settings.button_label_right != blank -%}
+                    <div class="button-group">
+                      {%- if block.settings.button_style_secondary -%}
+                    
+                        <a 
+                           {% if block.settings.button_link_left != blank %} href="{{ block.settings.button_link_left }}"{% else %} role="link" aria-disabled="true"{% endif %} 
+                           {{ block.shopify_attributes }}>
+                           <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10.3334 15H19.6667" stroke="#E5AB7D" stroke-width="0.666667" stroke-linecap="round" stroke-linejoin="round"/>
+                           <path d="M10.3334 15L14.3334 19" stroke="#E5AB7D" stroke-width="0.666667" stroke-linecap="round" stroke-linejoin="round"/>
+                           <path d="M10.3334 15L14.3334 11" stroke="#E5AB7D" stroke-width="0.666667" stroke-linecap="round" stroke-linejoin="round"/>
+                           </svg>
+                          {% render 'icon', icon: 'arrow-left' %}
+                        </a>
+                
+               
+                        <a  
+                           {% if block.settings.button_link_right != blank %} href="{{ block.settings.button_link_right }}"{% else %} role="link" aria-disabled="true"{% endif %} 
+                           {{ block.shopify_attributes }}>
+                           <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10.3334 15H19.6667" stroke="#660033" stroke-width="0.666667" stroke-linecap="round" stroke-linejoin="round"/>
+                           <path d="M15.6666 19L19.6666 15" stroke="#660033" stroke-width="0.666667" stroke-linecap="round" stroke-linejoin="round"/>
+                           <path d="M15.6666 11L19.6666 15" stroke="#660033" stroke-width="0.666667" stroke-linecap="round" stroke-linejoin="round"/>
+                           </svg>
+                           
+                          {% render 'icon', icon: 'arrow-right' %}
+                        </a>
+                      {%- else -%}
+                       
+                        <a 
+                           {% if block.settings.button_link_left != blank %} href="{{ block.settings.button_link_left }}"{% else %} role="link" aria-disabled="true"{% endif %} 
+                           {{ block.shopify_attributes }}>
+                           <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10.3334 15H19.6667" stroke="#E5AB7D" stroke-width="0.666667" stroke-linecap="round" stroke-linejoin="round"/>
+                           <path d="M10.3334 15L14.3334 19" stroke="#E5AB7D" stroke-width="0.666667" stroke-linecap="round" stroke-linejoin="round"/>
+                           <path d="M10.3334 15L14.3334 11" stroke="#E5AB7D" stroke-width="0.666667" stroke-linecap="round" stroke-linejoin="round"/>
+                           </svg>
+                        </a>
+                
+                       
+                        <a 
+                           {% if block.settings.button_link_right != blank %} href="{{ block.settings.button_link_right }}"{% else %} role="link" aria-disabled="true"{% endif %} 
+                           {{ block.shopify_attributes }}>
+                           <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10.3334 15H19.6667" stroke="#660033" stroke-width="0.666667" stroke-linecap="round" stroke-linejoin="round"/>
+                           <path d="M15.6666 19L19.6666 15" stroke="#660033" stroke-width="0.666667" stroke-linecap="round" stroke-linejoin="round"/>
+                           <path d="M15.6666 11L19.6666 15" stroke="#660033" stroke-width="0.666667" stroke-linecap="round" stroke-linejoin="round"/>
+                           </svg>
+                           
+                        </a>
+                      {%- endif -%}
+                    </div>
                   {%- endif -%}
-                {%- endif -%}
-            {%- endcase -%}
+                {%- endcase -%}
+                
           {%- endfor -%}
         </div>
       </div>
@@ -631,6 +675,7 @@
     }
   ],
   "blocks": [
+
     {
       "type": "heading",
       "name": "t:sections.image-with-text.blocks.heading.name",
@@ -802,46 +847,58 @@
     },
     {
       "type": "button",
-      "name": "t:sections.image-with-text.blocks.button.name",
-      "limit": 1,
+      "name": "left and right",
       "settings": [
         {
           "type": "text",
-          "id": "button_label",
-          "default": "Button label",
-          "label": "t:sections.all.button_label.label",
-          "info": "t:sections.all.button_label.info"
+          "id": "button_label_left",
+          "label": "Left Button Label",
+          "default": "Left"
         },
         {
-          "type": "url",
-          "id": "button_link",
-          "label": "t:sections.all.button_link.label"
+          "type": "text",
+          "id": "button_label_right",
+          "label": "Right Button Label",
+          "default": "Right"
         },
+        //will update later
+        // {
+        //   "type": "url",
+        //   "id": "button_link_left",
+        //   "label": "Left Button Link",
+        //   "default": "#"
+        // },
+        // {
+        //   "type": "url",
+        //   "id": "button_link_right",
+        //   "label": "Right Button Link",
+        //   "default": "#"
+        // },
         {
           "type": "select",
           "id": "button_size",
+          "label": "Button Size",
           "options": [
             {
               "value": "small",
-              "label": "t:sections.all.button_size.options__1.label"
+              "label": "Small"
             },
             {
               "value": "medium",
-              "label": "t:sections.all.button_size.options__2.label"
+              "label": "Medium"
             },
             {
               "value": "large",
-              "label": "t:sections.all.button_size.options__3.label"
+              "label": "Large"
             }
           ],
-          "default": "medium",
-          "label": "t:sections.all.button_size.label"
+          "default": "medium"
         },
         {
           "type": "checkbox",
           "id": "button_style_secondary",
-          "default": false,
-          "label": "t:sections.all.button_style_secondary.label"
+          "label": "Use Secondary Button Style",
+          "default": false
         }
       ]
     }
