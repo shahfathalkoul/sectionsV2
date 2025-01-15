@@ -631,7 +631,7 @@
         "heading_pjCbd8": {
           "type": "heading",
           "settings": {
-            "heading": "Joyful Stories from Our Customers",
+            "heading": "JOYFUL STORIES FROM OUR CUSTOMERS",
             "heading_size": "h1",
             "heading_tag": "h2"
           }
@@ -684,6 +684,7 @@
         "mobile_text_alignment": "left",
         "mobile_image_ratio": "auto",
         "enable_video_looping": false,
+        "video_url": "",
         "use_custom_colors": false,
         "colors_button_label": "#ffffff",
         "colors_button_background": "#1a1b18",
