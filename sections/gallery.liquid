@@ -23,8 +23,8 @@
 
 <div class="section--padding{% if section.settings.show_divider %} section--divider{% endif %}">
   <div class="page-width{% if section.settings.full_width %} page-width--full-width{% endif %}">
-    <div class="title-wrapper{% if section.settings.heading == blank %} title-wrapper--no-heading{% endif %}{% if section.settings.full_width %} page-width{% endif %} {{ section.settings.heading_alignment }}">
-      <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</{{ section.settings.heading_tag }}>
+    <div class="title-wrapper{% if section.settings.heading == blank %} title-wrapper--no-heading{% endif %}{% if section.settings.full_width %} page-width{% endif %} {{ section.settings.heading_alignment }}" >
+      <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}" >{{ section.settings.heading | escape }}</{{ section.settings.heading_tag }}>
     </div>
 
     {%- liquid
@@ -84,8 +84,18 @@
         {%- endfor -%}
       </ul>
     </slider-component>
+
+    {%- if section.settings.button_text != blank -%}
+      <div class="gallery-button-wrapper">
+  <a href="{{ section.settings.button_link }}" class="gallery-button {{ section.settings.button_style }}">
+    {{ section.settings.button_text | escape }}
+  </a>
+</div>
+    {%- endif -%}
   </div>
 </div>
+
+
 
 {% schema %}
 {
@@ -150,6 +160,35 @@
       "id": "heading",
       "default": "Gallery",
       "label": "t:sections.all.heading.label"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Follow @Zuvees for exclusive updates and offers"
+    },
+    //update later on
+    // {
+    //   "type": "url",
+    //   "id": "button_link",
+    //   "label": "Button Link",
+    //   "default": ""
+    // },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Button Style",
+      "options": [
+        {
+          "value": "button--primary",
+          "label": "Primary"
+        },
+        {
+          "value": "button--secondary",
+          "label": "Secondary"
+        }
+      ],
+      "default": "button--primary"
     },
     {
       "type": "select",
@@ -480,3 +519,28 @@
   }
 }
 {% endschema %}
+<style>
+  .gallery-button-wrapper {
+  display: flex;               
+  justify-content: center;     
+  align-items: center;          
+  width: 100%;                  
+  margin-top: 20px;    
+  gap: 4px;        
+
+.gallery-button {
+  padding: 9px 24px;          
+  text-align: center;          
+  border: 0px solid #000;     
+  border-radius: 4px;           
+  background-color: #660033;
+  color: #FFF8F3;
+  font-family: josefin sans;        
+  font-size: 16px;              
+  font-weight: 500;            
+  text-decoration: none;        
+  display: inline-block;        
+    
+}
+
+</style>
