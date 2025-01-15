@@ -549,6 +549,8 @@
         "button_KFUnYU": {
           "type": "button",
           "settings": {
+            "button_label_left": "Left",
+            "button_label_right": "Right",
             "button_size": "medium",
             "button_style_secondary": false
           }
@@ -648,9 +650,17 @@
             "custom_liquid": "Mariam Belidong"
           }
         },
+        "custom_liquid_jW7P8P": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "ok"
+          }
+        },
         "button_pQxwY4": {
           "type": "button",
           "settings": {
+            "button_label_left": "Left",
+            "button_label_right": "Right",
             "button_size": "medium",
             "button_style_secondary": false
           }
@@ -661,6 +671,7 @@
         "heading_pjCbd8",
         "text_6ncVrA",
         "custom_liquid_4PNyT9",
+        "custom_liquid_jW7P8P",
         "button_pQxwY4"
       ],
       "settings": {
