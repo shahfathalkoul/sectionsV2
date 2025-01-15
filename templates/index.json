@@ -644,18 +644,16 @@
             "secondary_color": false
           }
         },
-        "text_CiR4R3": {
-          "type": "text",
+        "custom_liquid_4PNyT9": {
+          "type": "custom_liquid",
           "settings": {
-            "text": "<p>Mariam Belidong</p>",
-            "text_size": "typeset",
-            "secondary_color": false
+            "custom_liquid": "Mariam Belidong"
           }
         },
         "button_pQxwY4": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "->",
             "button_link": "",
             "button_size": "medium",
             "button_style_secondary": false
@@ -666,7 +664,7 @@
         "subheading_bqWUn9",
         "heading_pjCbd8",
         "text_6ncVrA",
-        "text_CiR4R3",
+        "custom_liquid_4PNyT9",
         "button_pQxwY4"
       ],
       "settings": {
