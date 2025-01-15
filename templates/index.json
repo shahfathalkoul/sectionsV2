@@ -686,6 +686,7 @@
         "image-0": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Image_Placeholder.png",
             "image_position": "center center",
             "subheading": "",
             "subheading_size": "h5",
@@ -698,6 +699,7 @@
         "image-1": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Image.png",
             "image_position": "center center",
             "subheading": "",
             "subheading_size": "h4",
@@ -710,6 +712,7 @@
         "image-4": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Image_Placeholder_d1202c0e-9eb4-4caf-9dfd-59568cfd12f3.png",
             "image_position": "center center",
             "subheading": "",
             "subheading_size": "h5",
@@ -722,6 +725,7 @@
         "image-2": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Image_Placeholder_7be4c421-39ba-4165-975e-1f783fe34ca5.png",
             "image_position": "center center",
             "subheading": "",
             "subheading_size": "h5",
@@ -734,6 +738,7 @@
         "image-3": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Image_Placeholder_5e04e63f-f510-4651-ba31-fc3bb92d72aa.png",
             "image_position": "center center",
             "subheading": "",
             "subheading_size": "h5",
@@ -742,6 +747,19 @@
             "link": "",
             "text_box_position": "middle-center"
           }
+        },
+        "image_b687LJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Image_Placeholder_28c48aec-5cf1-4a2c-bad6-3b7ff00dd1ae.png",
+            "image_position": "center center",
+            "subheading": "",
+            "subheading_size": "h5",
+            "heading": "",
+            "heading_size": "h3",
+            "link": "",
+            "text_box_position": "bottom-left"
+          }
         }
       },
       "block_order": [
@@ -749,24 +767,25 @@
         "image-1",
         "image-4",
         "image-2",
-        "image-3"
+        "image-3",
+        "image_b687LJ"
       ],
       "settings": {
         "per_row": 6,
         "spacing_images": 0,
         "image_height": 280,
         "apply_overlay": true,
-        "full_width": false,
+        "full_width": true,
         "show_divider": false,
-        "heading": "",
+        "heading": "A Glimpse Into Zuvees’ World",
         "heading_size": "h1",
-        "heading_alignment": "left",
+        "heading_alignment": "center",
         "heading_tag": "h4",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "mobile_image_height": 160,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
     "empty_space_Nnqwwt": {
