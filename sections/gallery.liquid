@@ -21,7 +21,8 @@
 
 {{ 'section-gallery.css' | asset_url | stylesheet_tag }}
 
-<div class="section--padding{% if section.settings.show_divider %} section--divider{% endif %}">
+<div style="background-color:#FFF8F3;
+;" class="section--padding{% if section.settings.show_divider %} section--divider{% endif %}">
   <div class="page-width{% if section.settings.full_width %} page-width--full-width{% endif %}">
     <div class="title-wrapper{% if section.settings.heading == blank %} title-wrapper--no-heading{% endif %}{% if section.settings.full_width %} page-width{% endif %} {{ section.settings.heading_alignment }}" >
       <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}" >{{ section.settings.heading | escape }}</{{ section.settings.heading_tag }}>
@@ -86,7 +87,7 @@
     </slider-component>
 
     {%- if section.settings.button_text != blank -%}
-      <div class="gallery-button-wrapper">
+      <div style=" margin-top : 8rem" class="gallery-button-wrapper">
   <a href="{{ section.settings.button_link }}" class="gallery-button {{ section.settings.button_style }}">
     {{ section.settings.button_text | escape }}
   </a>
